@@ -1243,7 +1243,7 @@ int usbi_clear_event(struct libusb_context *ctx)
  * platform
  * \returns another LIBUSB_ERROR code on other failure
  */
-int API_EXPORTED libusb_wrap_sys_device(libusb_context *ctx, intptr_t sys_dev,
+int API_EXPORTED libusb_open_device_file(libusb_context *ctx, intptr_t sys_dev,
 	libusb_device_handle **dev_handle)
 {
 	struct libusb_device_handle *_dev_handle;
